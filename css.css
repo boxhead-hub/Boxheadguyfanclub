@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial;
+    background: linear-gradient(to bottom, #2e0000, #000);
+    color: white;
+    overflow-y: scroll;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar { width: 10px; }
+body::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 10px;
+}
+
+.navbar {
+    background: rgba(255,0,0,0.4);
+    padding: 10px;
+    border-bottom: 2px solid gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: gold;
+    font-size: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: gold;
+    text-decoration: none;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 35px;
+    color: ruby;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.section {
+    margin-top: 30px;
+}
+
+/* Shop */
+.item {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid gold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px gold;
+}
+
+/* Chat */
+.chat-box {
+    height: 300px;
+    border: 2px solid gold;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+/* Back Arrow */
+.back-arrow {
+    color: gold;
+    font-size: 25px;
+    text-decoration: none;
+}
+/* ---------------- CHAT INPUT AREA (Bottom) ---------------- */
+.chat-input-area {
+    display: flex;
+    margin-top: 10px;
+    border: 2px solid gold;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 15px gold;
+}
+
+.chat-input-area input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    border-radius: 50px;
+}
+
+.send-btn {
+    background: gold;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    width: 50px;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.send-btn:hover {
+    transform: scale(1.2);
+    background: #ffcf33;
+}
